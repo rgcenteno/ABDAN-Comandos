@@ -56,8 +56,8 @@ aws iam list-user-policies --user-name $user
 ```sh
 aws ec2 create-security-group \
 --group-name MySG \
---description "Security group para base de datos" 
-\--vpc-id $VPC_ID
+--description "Security group para base de datos" \
+--vpc-id $VPC_ID
 ```
 
 ### Establecer una regla de entrada a un Security Group
