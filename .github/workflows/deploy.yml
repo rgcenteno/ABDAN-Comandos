@@ -24,7 +24,7 @@ jobs:
         run: |
           pip install mkdocs
           # Si usas el tema Material u otros plugins, añádelos aquí abajo:
-          pip install mkdocs-dracula-theme
+          pip install mkdocs-material
 
       - name: Deploy to GitHub Pages
         run: |
