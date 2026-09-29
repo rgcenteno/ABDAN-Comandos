@@ -1,0 +1,1698 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Parámetros creación bucket</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-rapida-de-comandos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Parámetros creación bucket" class="md-header__button md-logo" aria-label="Parámetros creación bucket" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Parámetros creación bucket
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comandos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo light"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Parámetros creación bucket" class="md-nav__button md-logo" aria-label="Parámetros creación bucket" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Parámetros creación bucket
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ver-credenciales-de-quien-hace-la-peticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ver credenciales de quién hace la petición
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EC2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EC2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obtener-metadatos-de-la-instancia-ec2-a-la-que-estamos-conectados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtener metadatos de la instancia EC2 a la que estamos conectados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-datos-de-la-instancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtener datos de la instancia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-tipo-de-instancia-ec2-necesario-detener-primero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambiar tipo de instancia EC2 (necesario detener primero)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas-adjuntas-a-un-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Políticas adjuntas a un usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas-inline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Políticas inline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-grupo-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un grupo de seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-una-regla-de-entrada-a-un-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Establecer una regla de entrada a un Security Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-regla-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobar regla de seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-bucket-en-una-region-especifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un bucket en una región específica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activar-control-de-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activar control de versiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-un-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Borrar un bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-buckets-en-cuenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mostrar buckets en cuenta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-buckets-en-una-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mostrar buckets en una región
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-contenido-de-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listar contenido de bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-un-fichero-local-en-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copiar un fichero local en S3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronizar-objetos-en-un-bucket-determinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronizar objetos en un bucket determinado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-elemento-de-un-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Borrar elemento de un bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hacer-un-listado-de-todas-las-versiones-de-un-objeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hacer un listado de todas las versiones de un objeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperar-en-s3-con-control-de-versiones-un-fichero-eliminado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recuperar en S3 con control de versiones un fichero eliminado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descargar-una-version-especifica-de-un-fichero-en-un-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descargar una versión específica de un fichero en un S3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EBS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EBS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un volumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-datos-sobre-un-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtener datos sobre un volumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asociar-a-una-instancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asociar a una instancia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-instantanea-de-ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una instantánea de EBS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-una-instantanea-a-otra-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copiar una instantánea a otra región
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-datos-de-un-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobar datos de un snapshot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restaurar-un-snapshot-a-un-nuevo-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restaurar un snapshot a un nuevo volumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desasociar-un-volumen-a-una-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desasociar un volumen a una máquina
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restaurar-un-volumen-conectado-a-una-instancia-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restaurar un volumen conectado a una instancia EC2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-subnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una Subnet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RDS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-grupo-de-subred" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un grupo de subred
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-instancia-rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una instancia RDS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-estado-de-instancia-rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar estado de instancia RDS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-dlm-data-lifecycle-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon DLM (Data Lifecycle Manager)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon DLM (Data Lifecycle Manager)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-rol-de-iam-necesario-para-que-dlm-funcione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creación de rol de IAM necesario para que DLM funcione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-politica-de-ciclo-de-vida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una política de ciclo de vida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ver-credenciales-de-quien-hace-la-peticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ver credenciales de quién hace la petición
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EC2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EC2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obtener-metadatos-de-la-instancia-ec2-a-la-que-estamos-conectados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtener metadatos de la instancia EC2 a la que estamos conectados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-datos-de-la-instancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtener datos de la instancia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-tipo-de-instancia-ec2-necesario-detener-primero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambiar tipo de instancia EC2 (necesario detener primero)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas-adjuntas-a-un-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Políticas adjuntas a un usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas-inline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Políticas inline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-grupo-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un grupo de seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establecer-una-regla-de-entrada-a-un-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Establecer una regla de entrada a un Security Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-regla-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobar regla de seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-bucket-en-una-region-especifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un bucket en una región específica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activar-control-de-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activar control de versiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-un-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Borrar un bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-buckets-en-cuenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mostrar buckets en cuenta
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mostrar-buckets-en-una-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mostrar buckets en una región
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-contenido-de-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listar contenido de bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-un-fichero-local-en-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copiar un fichero local en S3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronizar-objetos-en-un-bucket-determinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronizar objetos en un bucket determinado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-elemento-de-un-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Borrar elemento de un bucket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hacer-un-listado-de-todas-las-versiones-de-un-objeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hacer un listado de todas las versiones de un objeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperar-en-s3-con-control-de-versiones-un-fichero-eliminado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recuperar en S3 con control de versiones un fichero eliminado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descargar-una-version-especifica-de-un-fichero-en-un-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descargar una versión específica de un fichero en un S3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EBS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EBS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un volumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-datos-sobre-un-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obtener datos sobre un volumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asociar-a-una-instancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asociar a una instancia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-instantanea-de-ebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una instantánea de EBS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-una-instantanea-a-otra-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copiar una instantánea a otra región
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-datos-de-un-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobar datos de un snapshot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restaurar-un-snapshot-a-un-nuevo-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restaurar un snapshot a un nuevo volumen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desasociar-un-volumen-a-una-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desasociar un volumen a una máquina
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restaurar-un-volumen-conectado-a-una-instancia-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restaurar un volumen conectado a una instancia EC2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-subnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una Subnet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RDS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-grupo-de-subred" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un grupo de subred
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-instancia-rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una instancia RDS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-estado-de-instancia-rds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar estado de instancia RDS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-dlm-data-lifecycle-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon DLM (Data Lifecycle Manager)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon DLM (Data Lifecycle Manager)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-rol-de-iam-necesario-para-que-dlm-funcione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creación de rol de IAM necesario para que DLM funcione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-politica-de-ciclo-de-vida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una política de ciclo de vida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guia-rapida-de-comandos">Guía rápida de comandos</h1>
+<h2 id="generales">Generales</h2>
+<h3 id="ver-credenciales-de-quien-hace-la-peticion">Ver credenciales de quién hace la petición</h3>
+<pre><code class="language-sh">aws sts get-caller-identity
+</code></pre>
+<h2 id="ec2">EC2</h2>
+<h3 id="obtener-metadatos-de-la-instancia-ec2-a-la-que-estamos-conectados">Obtener metadatos de la instancia EC2 a la que estamos conectados</h3>
+<pre><code class="language-sh">curl http://169.254.169.254/latest/meta-data
+</code></pre>
+<p>Obtener el instance id document. Devuelve datos como id de instancia, AZ o la región. Se adjunta la versión v2 que es compatible en máquinas actuales.</p>
+<pre><code class="language-sh">TOKEN=`curl -X PUT &quot;http://169.254.169.254/latest/api/token&quot; -H &quot;X-aws-ec2-metadata-token-ttl-seconds: 21600&quot;` \
+    &amp;&amp; curl -H &quot;X-aws-ec2-metadata-token: $TOKEN&quot; http://169.254.169.254/latest/dynamic/instance-identity/document
+</code></pre>
+<h3 id="obtener-datos-de-la-instancia">Obtener datos de la instancia</h3>
+<p>En este caso obtendremos los módulos EBS</p>
+<pre><code class="language-sh">aws ec2 describe-instances \
+--filter 'Name=tag:Name,Values=Processor' \
+--query 'Reservations[0].Instances[0].BlockDeviceMappings[0].Ebs.{VolumeId:VolumeId}'
+</code></pre>
+<h3 id="cambiar-tipo-de-instancia-ec2-necesario-detener-primero">Cambiar tipo de instancia EC2 (necesario detener primero)</h3>
+<pre><code class="language-sh">aws ec2 modify-instance-attribute --instance-type t3.large
+</code></pre>
+<h3 id="politicas-adjuntas-a-un-usuario">Políticas adjuntas a un usuario</h3>
+<pre><code class="language-sh">aws iam list-attached-user-policies --user-name $user
+</code></pre>
+<h3 id="politicas-inline">Políticas inline</h3>
+<pre><code class="language-sh">aws iam list-user-policies --user-name $user
+</code></pre>
+<h3 id="crear-un-grupo-de-seguridad">Crear un grupo de seguridad</h3>
+<pre><code class="language-sh">aws ec2 create-security-group \
+--group-name MySG \
+--description &quot;Security group para base de datos&quot; \
+--vpc-id $VPC_ID
+</code></pre>
+<h3 id="establecer-una-regla-de-entrada-a-un-security-group">Establecer una regla de entrada a un Security Group</h3>
+<pre><code class="language-sh">aws ec2 authorize-security-group-ingress \
+--group-id $SECURITY_GROUP_ID \
+--protocol tcp --port 3306 \
+--source-group sg-0465e354b41c6e55e
+</code></pre>
+<h3 id="comprobar-regla-de-seguridad">Comprobar regla de seguridad</h3>
+<pre><code class="language-sh">aws ec2 describe-security-groups 
+--query &quot;SecurityGroups[*].[GroupName,GroupId,IpPermissions]&quot; 
+--filters &quot;Name=group-name,Values='MySG'&quot;
+</code></pre>
+<h2 id="s3">S3</h2>
+<h3 id="crear-un-bucket-en-una-region-especifica">Crear un bucket en una región específica</h3>
+<p>Versión s3api</p>
+<pre><code class="language-sh">aws s3api create-bucket \
+ --bucket mi_bucket \
+ --region eu-west-2 \
+ --create-bucket-configuration LocationConstraint=eu-west-2
+</code></pre>
+<p>Versión s3</p>
+<pre><code class="language-sh">aws s3 mb s3://mi_bucket --region eu-west-2
+</code></pre>
+<h3 id="activar-control-de-versiones">Activar control de versiones</h3>
+<pre><code class="language-sh">aws s3api put-bucket-versioning \
+ --bucket rgcenteno-s3api-0809 \
+ --region eu-west-2 \
+ --versioning-configuration Status=Enabled
+</code></pre>
+<h3 id="borrar-un-bucket">Borrar un bucket</h3>
+<p>Versión s3api. Sólo funciona con buckets vacíos.</p>
+<pre><code class="language-sh">aws s3api delete-bucket \
+ --bucket rgcenteno-s3api-0809
+</code></pre>
+<p>Versión s3. Necesario <code>--force</code> si no está vacío el bucket.</p>
+<pre><code class="language-sh">aws s3 rb s3://rgcenteno-s3api-0809 --force
+</code></pre>
+<h3 id="mostrar-buckets-en-cuenta">Mostrar buckets en cuenta</h3>
+<pre><code class="language-sh">aws s3 ls
+</code></pre>
+<h3 id="mostrar-buckets-en-una-region">Mostrar buckets en una región</h3>
+<pre><code class="language-sh">aws s3 ls --region eu-west-2
+</code></pre>
+<h3 id="listar-contenido-de-bucket">Listar contenido de bucket</h3>
+<pre><code class="language-sh">aws s3 ls s3://amzn-s3-demo-bucket
+</code></pre>
+<h3 id="copiar-un-fichero-local-en-s3">Copiar un fichero local en S3</h3>
+<pre><code class="language-sh">aws s3 cp file.txt s3://my-bucket/folder/file.txt
+</code></pre>
+<p>Si queremos añadir la clase de almacenamiento.</p>
+<pre><code class="language-sh">aws s3 cp file.txt s3://my-bucket/folder/file.txt \
+    --storage-class INTELLIGENT_TIERING 
+</code></pre>
+<p>Clases soportadas:</p>
+<ul>
+<li>
+<p><code>STANDARD</code></p>
+</li>
+<li>
+<p><code>STANDARD_IA</code> (estándar poco frecuente)</p>
+</li>
+<li>
+<p><code>INTELLIGENT_TIERING</code></p>
+</li>
+<li>
+<p><code>ONZONE_IA</code> estándar poco frecuente zona única</p>
+</li>
+<li>
+<p><code>GLACIER</code></p>
+</li>
+</ul>
+<h3 id="sincronizar-objetos-en-un-bucket-determinado">Sincronizar objetos en un bucket determinado</h3>
+<p>Sincroniza en el directorio actual el contenido de la carpeta myprefix del bucket my-bucket. <strong>Primer parámetro origen, segundo: destino</strong>*.</p>
+<pre><code class="language-sh">aws s3 sync s3://my-bucket/myprefix .
+</code></pre>
+<h3 id="borrar-elemento-de-un-bucket">Borrar elemento de un bucket</h3>
+<pre><code class="language-sh">aws s3 rm s3://my-bucket/folder/file.txt
+</code></pre>
+<h3 id="hacer-un-listado-de-todas-las-versiones-de-un-objeto">Hacer un listado de  todas las versiones de un objeto</h3>
+<pre><code class="language-sh">aws s3api list-object-versions \
+    --bucket mi-nombre-de-bucket \
+    --prefix mi-fichero-borrado.txt
+</code></pre>
+<h3 id="recuperar-en-s3-con-control-de-versiones-un-fichero-eliminado">Recuperar en S3 con control de versiones un fichero eliminado</h3>
+<p>Primero obtenemos el VersionId del fichero</p>
+<pre><code class="language-sh">aws s3api list-object-versions \
+--bucket mi-nombre-de-bucket \
+--prefix mi-fichero-borrado.txt \
+--query &quot;DeleteMarkers[?IsLatest==\`true\`].VersionId&quot; \
+--output text
+</code></pre>
+<p>Luego restauramos el fichero en el s3</p>
+<pre><code class="language-sh">aws s3api delete-object \
+--bucket mi-nombre-de-bucket \
+--key mi-fichero-borrado.txt \
+--version-id ID_DEL_MARCADOR_DE_BORRADO
+</code></pre>
+<h3 id="descargar-una-version-especifica-de-un-fichero-en-un-s3">Descargar una versión específica de un fichero en un S3</h3>
+<pre><code class="language-sh">aws s3api get-object \
+--bucket rgcenteno-1009 \
+--key files/file1.txt \
+--version-id NPhUZHh1IzxN_QIKiX_wmG2zReZ6yLPE \
+carpeta_local/nombre_fichero.txt
+</code></pre>
+<h2 id="ebs">EBS</h2>
+<h3 id="crear-un-volumen">Crear un volumen</h3>
+<pre><code class="language-sh">aws ec2 create-volume --size 80 \
+ --avaliability-zone eu-west-2 \
+ --volume-type gp3
+</code></pre>
+<h3 id="obtener-datos-sobre-un-volumen">Obtener datos sobre un volumen</h3>
+<pre><code class="language-sh">aws ec2 describe-volumes --volume-ids &lt;mi_id&gt;
+</code></pre>
+<h3 id="asociar-a-una-instancia">Asociar a una instancia</h3>
+<p><a href="https://docs.aws.amazon.com/ebs/latest/userguide/ebs-attaching-volume.html">Documentación AWS</a> </p>
+<pre><code class="language-sh">aws ec2 attach-volume --volume-id &lt;id_vol&gt; \
+ --instance-id id_ec2 --device /dev/sdf
+</code></pre>
+<h3 id="crear-una-instantanea-de-ebs">Crear una instantánea de EBS</h3>
+<p>Para volúmenes raíz es recomendable parar la instancia antes de hacer la instantánea</p>
+<pre><code class="language-sh">aws ec2 create-snapshot --volume-id id_vol \
+    --descripcion &quot;Nueva instantánea&quot;
+</code></pre>
+<h3 id="copiar-una-instantanea-a-otra-region">Copiar una instantánea a otra región</h3>
+<p>Las instantáneas se limitan al nivel de la región y se pueden ver únicamente en la región en la que se crearon. Si desea usar una instantánea en una región diferente o hacer una copia de ella en la misma región, puede usar el comando <code>copy-snapshot</code> de la CLI de AWS para copiarla.</p>
+<pre><code class="language-sh">aws ec2 copy-snapshot --region us-east-1 \
+    --source-region us-west-2 \
+    --source-snapshot-id snap-id-123467
+    --description &quot;This is a copy&quot;
+</code></pre>
+<h3 id="comprobar-datos-de-un-snapshot">Comprobar datos de un snapshot</h3>
+<pre><code class="language-sh">aws ec2 describe-snapshots \
+    --snapshot-ids snap-id-abcde
+    --region us-east-1 
+</code></pre>
+<h3 id="restaurar-un-snapshot-a-un-nuevo-volumen">Restaurar un snapshot a un nuevo volumen</h3>
+<pre><code class="language-sh">aws ec2 create-volume \
+  --snapshot-id snap-xxxxxxxx \
+  --availability-zone us-east-1 \
+  --volume-type gp3
+  --size 80
+</code></pre>
+<h3 id="desasociar-un-volumen-a-una-maquina">Desasociar un volumen a una máquina</h3>
+<pre><code class="language-sh">aws ec2 detach-volume --volume-id vol-antiguo
+</code></pre>
+<pre><code class="language-sh">aws ec2 attach-volume \
+  --volume-id vol-restaurado \
+  --instance-id i-xxxxxxxx \
+  --device /dev/xvda
+</code></pre>
+<h3 id="restaurar-un-volumen-conectado-a-una-instancia-ec2">Restaurar un volumen conectado a una instancia EC2</h3>
+<p>Debemos restaurar la imagen a un nuevo volumen, luego tendríamos dos opciones:</p>
+<ul>
+<li>
+<p><a href="#desasociar-un-volumen-a-una-mquina">Desasociar el volumen antiguo</a> y <a href="#asociar-a-una-instancia">asociar el volumen restaurado</a></p>
+</li>
+<li>
+<p><a href="#asociar-a-una-instancia">Asociar el volumen restaurado</a> a la máquina EC2 y copiar los ficheros que queremos recuperar</p>
+</li>
+</ul>
+<h2 id="vpc">VPC</h2>
+<h3 id="crear-una-subnet">Crear una Subnet</h3>
+<pre><code class="language-shell">aws ec2 create-subnet --vpc-id $VPC_ID --cidr-block 10.200.2.0/23 --avaliability-zone us-east-1a
+</code></pre>
+<h2 id="rds">RDS</h2>
+<h3 id="crear-un-grupo-de-subred">Crear un grupo de subred</h3>
+<p>Amazon RDS te obliga a seleccionar al menos dos subredes en dos Zonas de Disponibilidad (AZ) diferentes. Esto es obligatorio incluso aunque vayamos a desplegar un RDS Single-AZ para garantizar la <strong>alta disponibilidad</strong> y la <strong>tolerancia a fallos</strong> de tu base de dato.</p>
+<pre><code class="language-sh">aws rds create-db-subnet-group \
+--db-subnet-group-name &quot;MyDB Subnet Group&quot; \
+--db-subnet-group-description &quot;DB subnet for My DB&quot; \
+--subnet-ids subnet-0ea4d8829de8865a3 subnet-066542fb7e0844a29 \
+--tags &quot;Key=Name,Value= MyDatabaseSubnetGroup&quot;
+</code></pre>
+<h3 id="crear-una-instancia-rds">Crear una instancia RDS</h3>
+<pre><code class="language-sh">aws rds create-db-instance \
+--db-instance-identifier MyDBInstance \
+--engine mariadb \
+--db-instance-class db.t3.micro \
+--allocated-storage 20 \
+--availability-zone us-east-1a \
+--db-subnet-group-name &quot;MyDB Subnet Group&quot; \
+--vpc-security-group-ids sg-0693fe00de879ccea \
+--no-publicly-accessible \
+--master-username root --master-user-password 'password'
+</code></pre>
+<h3 id="consultar-estado-de-instancia-rds">Consultar estado de instancia RDS</h3>
+<pre><code class="language-sh">aws rds describe-db-instances \
+--db-instance-identifier MyDBInstance \
+--query &quot;DBInstances[*].[Endpoint.Address,AvailabilityZone,PreferredBackupWindow,BackupRetentionPeriod,DBInstanceStatus]&quot;
+</code></pre>
+<h2 id="amazon-dlm-data-lifecycle-manager">Amazon DLM (Data Lifecycle Manager)</h2>
+<p>Herramienta para automatizar la creación, retención y eliminado de instantáneas</p>
+<h3 id="creacion-de-rol-de-iam-necesario-para-que-dlm-funcione">Creación de rol de IAM necesario para que DLM funcione</h3>
+<pre><code class="language-sh">aws dlm create-default-role
+</code></pre>
+<h3 id="crear-una-politica-de-ciclo-de-vida">Crear una política de ciclo de vida</h3>
+<pre><code class="language-sh">aws dlm --create-lifecycle-policy \
+    --description &quot;Política de ciclo de vida&quot; \
+    --state ENABLED \
+    --execution-role-arn \
+    arn:aws:iam:11111111:role/AWSDataLifeCycleManagerDefaultRole \
+    --policy-details file://policyDetails.json
+</code></pre>
+<p><strong>Fichero policyDetails.json</strong></p>
+<pre><code class="language-json">{
+&quot;ResourceTypes&quot;: [
+      &quot;VOLUME&quot;
+   ],
+   &quot;TargetTags&quot;    : [
+      {
+         &quot;Key&quot;        : &quot;name&quot;,
+         &quot;Value&quot;    : &quot;production&quot;
+      }
+   ],
+   &quot;Schedules&quot;    :[
+      {
+         &quot;Name&quot;    : &quot;DailySnapshots&quot;,
+         &quot;TagsToAdd&quot;: [
+            {
+               &quot;Key&quot;    : &quot;type&quot;,
+               &quot;Value&quot;: &quot;myDailySnapshot&quot;
+            }
+         ],
+         &quot;CreateRule&quot;    : {
+            &quot;Interval&quot;    : 24,
+            &quot;IntervalUnit&quot;: &quot;HOURS&quot;,
+            &quot;Times&quot;    : [
+               &quot;03:00&quot;
+            ]
+         },
+         &quot;RetainRule&quot;    : {
+            &quot;Count&quot;:5
+         },
+         &quot;CopyTags&quot;: false 
+      }
+   ]
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
