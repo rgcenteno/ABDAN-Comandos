@@ -1,0 +1,6 @@
+site_name: "Parámetros creación bucket"
+theme:
+  name: dracula
+  locale: "es"
+nav:
+    - Parámetros: "index.md"
