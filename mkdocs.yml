@@ -3,4 +3,4 @@ theme:
   name: dracula
   locale: "es"
 nav:
-    - Parámetros: "index.md"
+    - Comandos: "index.md"
